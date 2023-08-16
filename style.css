@@ -170,7 +170,7 @@ footer a{
     font-weight: 900;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     header{
         font-size: 1.3em;
         height: 55px;
