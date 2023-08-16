@@ -49,6 +49,7 @@ main div h2{
 }
 .subconteiner-inputs{
     display: flex;
+    flex-wrap: wrap;
     padding-top: 40px;
     font-size: 1em;
 }
@@ -70,7 +71,13 @@ main div h2{
     margin-top: 10px;
     outline: none;
     border: none;
-    border-bottom: 2.5px solid #ff5e00;;
+    border-bottom: 2.5px solid #ff5e00;
+}
+.box-input input[type="number"]{
+    text-align: center;
+}
+.box-input label{
+    text-align: center;
 }
 .subbox-parag-input{    
     display: flex;
@@ -112,6 +119,7 @@ main div h2{
 .container-resultado{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: stretch;
     
@@ -162,3 +170,75 @@ footer a{
     font-weight: 900;
 }
 
+@media screen and (max-width: 300px) {
+    header{
+        font-size: 1.3em;
+        height: 55px;
+    }
+    main{
+        width: 100%;
+        border-radius: none;
+        box-shadow: none;
+    }
+    .main{
+        width: 100%;
+
+    }
+    main div h2{
+        padding-top: 30px;
+        font-size: 1.2em;
+    }
+    .subconteiner-inputs{
+        padding-top: 20px;
+    }
+    .box-input{
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        margin: auto;
+        width: 60%;
+    }
+    .box-input h3{
+        font-size: 2.5em;
+    }
+    .box-input input{
+        padding-top: 15px;
+        margin: auto;
+    }
+    .subbox-parag-input{    
+        padding-bottom: 15px;
+    }
+    .subbox-parag-input input{
+        width: 100%;
+    }
+ 
+    /*--- INICIO CONTANER COM RESULTADOS ---*/
+    .container-resultado{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .item{
+        width: 95%;
+        margin: 5px 0px;
+    }
+    img{
+        display: block;
+        width: 95%;
+        margin: auto;
+    }
+    footer{
+        margin-top: 25px;
+        font-size: .8em;
+        padding: 10px;
+        height: 70px;
+    }
+    footer a{    
+        font-style: italic;
+        color: #D97904;
+        text-decoration: none;
+        font-weight: 900;
+    }
+   }
